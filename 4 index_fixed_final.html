@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سعيد العمري | وسيط عقاري</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img.project {
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #003366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch" onclick="toggleLanguage()">EN</div>
+
+<header>
+    <img src="page11_img1.png" alt="الشعار" class="logo"><br>
+    <h1 id="name">سعيد العمري</h1>
+    <p id="license">وسيط عقاري معتمد - رخصة فال: 1100050408</p>
+</header>
+
+<div class="container">
+    <section class="section" id="contact">
+        <h2>معلومات التواصل</h2>
+        <p><strong>البريد الإلكتروني:</strong> saeeed06@gmail.com</p>
+        <p><strong>رقم الجوال:</strong> +966 503266822</p>
+        <p><a href="https://wa.me/966503266822" class="whatsapp-button">تواصل عبر واتساب</a></p>
+        <p><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank">صفحتي على LinkedIn</a></p>
+    </section>
+
+    <section class="section" id="bio">
+        <h2>نبذة تعريفية</h2>
+        <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر التابعة لصندوق الاستثمارات العامة، أمتلك خبرة واسعة في تسويق المشاريع العقارية الفاخرة، وأعمل مع نخبة من المطورين العقاريين مثل شركة محمد الحبيب ومدى العقارية. أهدف إلى تقديم فرص استثمارية واعدة للمستثمرين المحليين والدوليين.</p>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>مشاريع مميزة</h2>
+        <img src="page21_img1.png" alt="مشروع 1" class="project">
+        <img src="page27_img1.png" alt="مشروع 2" class="project">
+        <img src="page31_img1.png" alt="مشروع 3" class="project">
+        <img src="page41_img1.png" alt="مشروع 4" class="project">
+        <img src="page49_img1.png" alt="مشروع 5" class="project">
+    </section>
+
+    <section class="section" id="partners">
+        <h2>الشركاء</h2>
+        <ul>
+            <li>شركة البحر الأحمر</li>
+            <li>شركة محمد الحبيب العقارية</li>
+            <li>شركة مدى العقارية</li>
+        </ul>
+    </section>
+</div>
+
+<script>
+    let isArabic = true;
+    function toggleLanguage() {
+        isArabic = !isArabic;
+        document.body.dir = isArabic ? 'rtl' : 'ltr';
+        document.documentElement.lang = isArabic ? 'ar' : 'en';
+
+        document.querySelector('.lang-switch').innerText = isArabic ? 'EN' : 'عربي';
+        document.getElementById('name').innerText = isArabic ? 'سعيد العمري' : 'Saeed Alamri';
+        document.getElementById('license').innerText = isArabic ? 'وسيط عقاري معتمد - رخصة فال: 1100050408' : 'Licensed Real Estate Broker - Val License: 1100050408';
+
+        document.getElementById('contact').innerHTML = isArabic ? `
+            <h2>معلومات التواصل</h2>
+            <p><strong>البريد الإلكتروني:</strong> saeeed06@gmail.com</p>
+            <p><strong>رقم الجوال:</strong> +966 503266822</p>
+            <p><a href='https://wa.me/966503266822' class='whatsapp-button'>تواصل عبر واتساب</a></p>
+            <p><a href='https://www.linkedin.com/in/saeed-alalmri-36b295163' target='_blank'>صفحتي على LinkedIn</a></p>
+        ` : `
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> saeeed06@gmail.com</p>
+            <p><strong>Phone:</strong> +966 503266822</p>
+            <p><a href='https://wa.me/966503266822' class='whatsapp-button'>Chat on WhatsApp</a></p>
+            <p><a href='https://www.linkedin.com/in/saeed-alalmri-36b295163' target='_blank'>My LinkedIn Profile</a></p>
+        `;
+
+        document.getElementById('bio').innerHTML = isArabic ? `
+            <h2>نبذة تعريفية</h2>
+            <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر التابعة لصندوق الاستثمارات العامة، أمتلك خبرة واسعة في تسويق المشاريع العقارية الفاخرة، وأعمل مع نخبة من المطورين العقاريين مثل شركة محمد الحبيب ومدى العقارية. أهدف إلى تقديم فرص استثمارية واعدة للمستثمرين المحليين والدوليين.</p>
+        ` : `
+            <h2>About Me</h2>
+            <p>I’m Saeed Alamri, a licensed real estate broker affiliated with The Red Sea Company (Public Investment Fund). I specialize in marketing luxury real estate projects and work with top-tier developers such as Mohammed Al-Habib and Mada Real Estate. My goal is to present high-potential investment opportunities to local and international investors.</p>
+        `;
+
+        document.getElementById('projects').querySelector('h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
+        document.getElementById('partners').innerHTML = isArabic ? `
+            <h2>الشركاء</h2>
+            <ul>
+                <li>شركة البحر الأحمر</li>
+                <li>شركة محمد الحبيب العقارية</li>
+                <li>شركة مدى العقارية</li>
+            </ul>
+        ` : `
+            <h2>Partners</h2>
+            <ul>
+                <li>The Red Sea Company</li>
+                <li>Mohammed Al-Habib Real Estate</li>
+                <li>Mada Real Estate</li>
+            </ul>
+        `;
+    }
+</script>
+
+</body>
+</html>
