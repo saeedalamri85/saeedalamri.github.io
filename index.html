@@ -1,164 +1,242 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NET0F90B1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9NET0F90B1');
-</script>
-    <meta charset="UTF-8">
-    <title>سعيد العمري | وسيط عقاري</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: 'Tahoma', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .logo {
-            max-width: 150px;
-        }
-        .container {
-            padding: 20px;
-        }
-        .section {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        img.project {
-            max-width: 100%;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-        .lang-switch {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: #003366;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .whatsapp-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-    </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9NET0F90B1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9NET0F90B1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سعيد العمري | وسيط عقاري معتمد لدى البحر الأحمر | فرص استثمارية فاخرة</title>
+  <meta name="description" content="فرص استثمارية فاخرة في مشاريع البحر الأحمر مثل جزيرة شورى و«لاحِق». تواصل مباشرة عبر واتساب لحجز استشارة مع وسيط عقاري معتمد.">
+  <link rel="canonical" href="https://www.saeedalamri.me/">
+  <meta name="robots" content="index,follow">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.saeedalamri.me/">
+  <meta property="og:title" content="سعيد العمري | وسيط عقاري معتمد لدى البحر الأحمر">
+  <meta property="og:description" content="استثمر في مشاريع فاخرة ضمن البحر الأحمر مثل جزيرة شورى و«لاحِق». احجز استشارة عبر واتساب.">
+  <meta property="og:image" content="https://www.saeedalamri.me/page21_img1.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root{
+      --primary:#003366;      /* أزرق داكن للهوية */
+      --gold:#C7A75C;         /* لمسة فاخرة */
+      --bg:#f4f4f4;
+      --text:#222;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:'Tahoma',system-ui; background:var(--bg); color:var(--text); line-height:1.7;
+    }
+    /* زر تبديل اللغة (يبقى كما كان) */
+    .lang-switch{
+      position:fixed; top:16px; left:16px; z-index:50;
+      background:var(--primary); color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; cursor:pointer; font-size:14px;
+    }
+    header{
+      background:var(--primary); color:#fff; text-align:center; padding:20px 16px;
+    }
+    .logo{max-width:140px}
+    .hero{
+      position:relative; overflow:hidden;
+      background:#000 url('page21_img1.png') center/cover no-repeat;
+      min-height:44vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
+    }
+    .hero::after{content:""; position:absolute; inset:0; background:rgba(0,0,0,.35);}
+    .hero-inner{position:relative; padding:32px 16px; max-width:900px}
+    .hero h1{margin:0 0 8px; font-size:clamp(22px,4.5vw,36px);}
+    .hero p{margin:6px 0 16px; font-size:clamp(14px,2.5vw,18px);}
+    .cta-wrap{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+    .btn{
+      display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700;
+    }
+    .btn-whatsapp{background:#25D366; color:#fff;}
+    .btn-outline{border:2px solid #fff; color:#fff;}
+    .container{padding:20px; max-width:1100px; margin:auto;}
+    .section{background:#fff; border-radius:12px; padding:18px; margin:18px 0;}
+    .section h2{margin-top:0; font-size:22px; color:var(--primary);}
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+    .card{border-radius:12px; overflow:hidden; background:#fafafa; border:1px solid #eee}
+    .card img{width:100%; height:auto; display:block}
+    .card .cap{padding:10px 12px; font-weight:700}
+    .meta-list{list-style:none; padding:0; margin:0}
+    .meta-list li{margin:6px 0}
+    footer{padding:24px 16px; text-align:center; color:#666}
+    a{color:var(--primary)}
+  </style>
 </head>
+
 <body>
+  <div class="lang-switch" onclick="toggleLanguage()">EN</div>
 
-<div class="lang-switch" onclick="toggleLanguage()">EN</div>
+  <!-- الهيدر -->
+  <header>
+    <img src="page11_img1.png" alt="شعار سعيد العمري" class="logo"><br>
+    <h1 id="name">سعيد العمري | وسيط عقاري معتمد لدى شركة البحر الأحمر</h1>
+    <p id="license">رخصة فال: 1100050408</p>
+  </header>
 
-<header>
-    <img src="page11_img1.png" alt="الشعار" class="logo"><br>
-    <h1 id="name">سعيد العمري</h1>
-    <p id="license">وسيط عقاري معتمد - رخصة فال: 1100050408</p>
-</header>
+  <!-- البطل -->
+  <section class="hero" aria-label="صورة لمشاريع فاخرة ضمن البحر الأحمر">
+    <div class="hero-inner">
+      <h1 id="hero-title">فرص استثمارية فاخرة في قلب المملكة</h1>
+      <p id="hero-sub">خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين</p>
+      <div class="cta-wrap">
+        <a class="btn btn-whatsapp" href="https://wa.me/966503266822" aria-label="تواصل عبر واتساب">تواصل عبر واتساب</a>
+        <a class="btn btn-outline" href="#contact">اتصل بنا</a>
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-    <section class="section" id="contact">
-        <h2>معلومات التواصل</h2>
-        <p><strong>البريد الإلكتروني:</strong> saeeed06@gmail.com</p>
-        <p><strong>رقم الجوال:</strong> +966 503266822</p>
-        <p><a href="https://wa.me/966503266822" class="whatsapp-button">تواصل عبر واتساب</a></p>
-        <p><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank">صفحتي على LinkedIn</a></p>
-    </section>
-
+  <main class="container">
+    <!-- نبذة -->
     <section class="section" id="bio">
-        <h2>نبذة تعريفية</h2>
-        <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر التابعة لصندوق الاستثمارات العامة، أمتلك خبرة واسعة في تسويق المشاريع العقارية الفاخرة، وأعمل مع نخبة من المطورين العقاريين مثل شركة محمد الحبيب ومدى العقارية. أهدف إلى تقديم فرص استثمارية واعدة للمستثمرين المحليين والدوليين.</p>
+      <h2>نبذة تعريفية</h2>
+      <p>
+        سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر (تابعة لصندوق الاستثمارات العامة).
+        أعمل على تسويق المشاريع العقارية الفاخرة وتقديم حلول استثمارية مدروسة للمستثمرين في المملكة والخليج.
+      </p>
     </section>
 
+    <!-- المشاريع -->
     <section class="section" id="projects">
-        <h2>مشاريع مميزة</h2>
-        <img src="page21_img1.png" alt="مشروع 1" class="project">
-        <img src="page27_img1.png" alt="مشروع 2" class="project">
-        <img src="page31_img1.png" alt="مشروع 3" class="project">
-        <img src="page41_img1.png" alt="مشروع 4" class="project">
-        <img src="page49_img1.png" alt="مشروع 5" class="project">
+      <h2>مشاريع مميزة</h2>
+      <div class="grid">
+        <figure class="card">
+          <img src="page21_img1.png" alt="جزيرة شورى - البحر الأحمر">
+          <figcaption class="cap">جزيرة شورى</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="page27_img1.png" alt="مشروع لاحِق - تجارب فندقية وطبيعية">
+          <figcaption class="cap">لاحِق</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="page31_img1.png" alt="مشروع فاخر ضمن البحر الأحمر">
+          <figcaption class="cap">مشروع فاخر</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="page41_img1.png" alt="إطلالة بحرية راقية">
+          <figcaption class="cap">إطلالة بحرية</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="page49_img1.png" alt="منتجعات وإقامات فاخرة">
+          <figcaption class="cap">منتجعات فاخرة</figcaption>
+        </figure>
+      </div>
     </section>
 
+    <!-- الشركاء -->
     <section class="section" id="partners">
-        <h2>الشركاء</h2>
-        <ul>
-            <li>شركة البحر الأحمر</li>
-            <li>شركة محمد الحبيب العقارية</li>
-            <li>شركة مدى العقارية</li>
-        </ul>
+      <h2>الشركاء</h2>
+      <ul class="meta-list">
+        <li>شركة البحر الأحمر</li>
+        <li>شركة محمد الحبيب العقارية</li>
+        <li>شركة مدى العقارية</li>
+      </ul>
     </section>
-</div>
 
-<script>
+    <!-- تواصل -->
+    <section class="section" id="contact">
+      <h2>معلومات التواصل</h2>
+      <ul class="meta-list">
+        <li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+        <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+        <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
+        <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © جميع الحقوق محفوظة لسعيد العمري — www.saeedalamri.me
+  </footer>
+
+  <!-- JSON-LD: تعريف نشاط وسيط عقاري + موقع -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "سعيد العمري",
+    "url": "https://www.saeedalamri.me/",
+    "logo": "https://www.saeedalamri.me/page11_img1.png",
+    "image": "https://www.saeedalamri.me/page21_img1.png",
+    "description": "وسيط عقاري معتمد لدى شركة البحر الأحمر. فرص استثمارية فاخرة في المملكة.",
+    "telephone": "+966503266822",
+    "email": "saeeed06@gmail.com",
+    "areaServed": "SA",
+    "address": { "@type": "PostalAddress", "addressCountry": "SA" },
+    "sameAs": ["https://www.linkedin.com/in/saeed-alalmri-36b295163"]
+  }
+  </script>
+
+  <!-- تبديل اللغة (نفس فكرتك، مع تصحيح النصوص) -->
+  <script>
     let isArabic = true;
     function toggleLanguage() {
-        isArabic = !isArabic;
-        document.body.dir = isArabic ? 'rtl' : 'ltr';
-        document.documentElement.lang = isArabic ? 'ar' : 'en';
+      isArabic = !isArabic;
+      document.body.dir = isArabic ? 'rtl' : 'ltr';
+      document.documentElement.lang = isArabic ? 'ar' : 'en';
+      document.querySelector('.lang-switch').innerText = isArabic ? 'EN' : 'عربي';
 
-        document.querySelector('.lang-switch').innerText = isArabic ? 'EN' : 'عربي';
-        document.getElementById('name').innerText = isArabic ? 'سعيد العمري' : 'Saeed Alamri';
-        document.getElementById('license').innerText = isArabic ? 'وسيط عقاري معتمد - رخصة فال: 1100050408' : 'Licensed Real Estate Broker - Val License: 1100050408';
+      document.getElementById('name').innerText = isArabic
+        ? 'سعيد العمري | وسيط عقاري معتمد لدى شركة البحر الأحمر'
+        : 'Saeed Alamri | Certified Real Estate Broker (Red Sea)';
 
-        document.getElementById('contact').innerHTML = isArabic ? `
-            <h2>معلومات التواصل</h2>
-            <p><strong>البريد الإلكتروني:</strong> saeeed06@gmail.com</p>
-            <p><strong>رقم الجوال:</strong> +966 503266822</p>
-            <p><a href='https://wa.me/966503266822' class='whatsapp-button'>تواصل عبر واتساب</a></p>
-            <p><a href='https://www.linkedin.com/in/saeed-alalmri-36b295163' target='_blank'>صفحتي على LinkedIn</a></p>
-        ` : `
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> saeeed06@gmail.com</p>
-            <p><strong>Phone:</strong> +966 503266822</p>
-            <p><a href='https://wa.me/966503266822' class='whatsapp-button'>Chat on WhatsApp</a></p>
-            <p><a href='https://www.linkedin.com/in/saeed-alalmri-36b295163' target='_blank'>My LinkedIn Profile</a></p>
-        `;
+      document.getElementById('license').innerText = isArabic
+        ? 'رخصة فال: 1100050408'
+        : 'Val License: 1100050408';
 
-        document.getElementById('bio').innerHTML = isArabic ? `
-            <h2>نبذة تعريفية</h2>
-            <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر التابعة لصندوق الاستثمارات العامة، أمتلك خبرة واسعة في تسويق المشاريع العقارية الفاخرة، وأعمل مع نخبة من المطورين العقاريين مثل شركة محمد الحبيب ومدى العقارية. أهدف إلى تقديم فرص استثمارية واعدة للمستثمرين المحليين والدوليين.</p>
-        ` : `
-            <h2>About Me</h2>
-            <p>I’m Saeed Alamri, a licensed real estate broker affiliated with The Red Sea Company (Public Investment Fund). I specialize in marketing luxury real estate projects and work with top-tier developers such as Mohammed Al-Habib and Mada Real Estate. My goal is to present high-potential investment opportunities to local and international investors.</p>
-        `;
+      // البطل
+      document.getElementById('hero-title').innerText = isArabic
+        ? 'فرص استثمارية فاخرة في قلب المملكة'
+        : 'Luxury Investment Opportunities in Saudi Arabia';
 
-        document.getElementById('projects').querySelector('h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
-        document.getElementById('partners').innerHTML = isArabic ? `
-            <h2>الشركاء</h2>
-            <ul>
-                <li>شركة البحر الأحمر</li>
-                <li>شركة محمد الحبيب العقارية</li>
-                <li>شركة مدى العقارية</li>
-            </ul>
-        ` : `
-            <h2>Partners</h2>
-            <ul>
-                <li>The Red Sea Company</li>
-                <li>Mohammed Al-Habib Real Estate</li>
-                <li>Mada Real Estate</li>
-            </ul>
-        `;
+      document.getElementById('hero-sub').innerText = isArabic
+        ? 'خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين'
+        : 'Expertise in marketing Red Sea luxury projects with trusted partners';
+
+      // نبذة
+      document.getElementById('bio').innerHTML = isArabic ? `
+        <h2>نبذة تعريفية</h2>
+        <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر (تابعة لصندوق الاستثمارات العامة).
+        أعمل على تسويق المشاريع العقارية الفاخرة وتقديم حلول استثمارية مدروسة للمستثمرين في المملكة والخليج.</p>
+      ` : `
+        <h2>About</h2>
+        <p>I’m Saeed Alamri, a certified real estate broker affiliated with The Red Sea Company (PIF).
+        I market luxury real estate projects and provide tailored investment solutions for clients in Saudi Arabia and the Gulf.</p>
+      `;
+
+      // عناوين الأقسام
+      document.querySelector('#projects h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
+      document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
+      document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
+
+      // قسم الشركاء + التواصل
+      if (!isArabic){
+        document.querySelector('#partners .meta-list').innerHTML = `
+          <li>The Red Sea Company</li><li>Mohammed Al-Habib Real Estate</li><li>Mada Real Estate</li>`;
+        document.querySelector('#contact .meta-list').innerHTML = `
+          <li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+          <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+      } else {
+        document.querySelector('#partners .meta-list').innerHTML = `
+          <li>شركة البحر الأحمر</li><li>شركة محمد الحبيب العقارية</li><li>شركة مدى العقارية</li>`;
+        document.querySelector('#contact .meta-list').innerHTML = `
+          <li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+          <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+          <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
+          <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+      }
     }
-</script>
-
+  </script>
 </body>
 </html>
