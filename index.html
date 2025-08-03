@@ -58,7 +58,6 @@
       background:#000 url('hero.webp') center/cover no-repeat;
       min-height:46vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
     }
-    /* طبقة التعتيم لا تتلقى اللمس وتبقى تحت المحتوى */
     .hero::after{
       content:""; position:absolute; inset:0; background:rgba(0,0,0,.35);
       z-index:0; pointer-events:none;
@@ -230,23 +229,33 @@
         I market luxury real estate projects and provide tailored investment solutions for clients in Saudi Arabia and the Gulf.</p>
       `;
 
-      /* الشركاء بالعربية والإنجليزية (مُحدّث مع Dar Global) */
+      /* تحديث عناوين الأقسام والقوائم */
+      document.querySelector('#projects h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
+      document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
+      document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
+
       if (!isArabic){
         document.querySelector('#partners .meta-list').innerHTML =
           `<li>The Red Sea Company</li>
            <li>Mohammed Al-Habib Real Estate</li>
            <li>Mada Real Estate</li>
            <li>Dar Global</li>`;
-        document.querySelector('#projects h2').innerText = 'Featured Projects';
-        document.querySelector('#contact h2').innerText = 'Contact';
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
       } else {
         document.querySelector('#partners .meta-list').innerHTML =
           `<li>شركة البحر الأحمر</li>
            <li>شركة محمد الحبيب العقارية</li>
            <li>شركة مدى العقارية</li>
            <li>شركة دار جلوبال</li>`;
-        document.querySelector('#projects h2').innerText = 'مشاريع مميزة';
-        document.querySelector('#contact h2').innerText = 'معلومات التواصل';
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
       }
     }
   </script>
