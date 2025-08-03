@@ -51,8 +51,9 @@
     header{
       background:var(--primary); color:#fff; text-align:center; padding:18px 12px;
     }
+    /* قوة اللون للرخصة */
     header #license {
-      color: #fff; /* تأكيد ظهور رقم الرخصة باللون الأبيض */
+      color: #fff !important;
     }
     .logo{max-width:140px}
 
@@ -215,52 +216,4 @@
         ? 'رخصة فال: 1100050408'
         : 'Val License: 1100050408';
 
-      document.getElementById('hero-title').innerText = isArabic
-        ? 'فرص استثمارية فاخرة في قلب المملكة'
-        : 'Luxury Investment Opportunities in Saudi Arabia';
-
-      document.getElementById('hero-sub').innerText = isArabic
-        ? 'خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين'
-        : 'Expertise in marketing Red Sea luxury projects with trusted partners';
-
-      document.getElementById('bio').innerHTML = isArabic ? `
-        <h2>نبذة تعريفية</h2>
-        <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر (تابعة لصندوق الاستثمارات العامة).
-        أعمل على تسويق المشاريع العقارية الفاخرة وتقديم حلول استثمارية مدروسة للمستثمرين في المملكة والخليج.</p>
-      ` : `
-        <h2>About</h2>
-        <p>I’m Saeed Alamri, a certified real estate broker affiliated with The Red Sea Company (PIF).
-        I market luxury real estate projects and provide tailored investment solutions for clients in Saudi Arabia and the Gulf.</p>
-      `;
-
-      document.querySelector('#projects h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
-      document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
-      document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
-
-      if (!isArabic){
-        document.querySelector('#partners .meta-list').innerHTML =
-          `<li>The Red Sea Company</li>
-           <li>Mohammed Al-Habib Real Estate</li>
-           <li>Mada Real Estate</li>
-           <li>Dar Global</li>`;
-        document.querySelector('#contact .meta-list').innerHTML =
-          `<li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
-           <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
-           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
-           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
-      } else {
-        document.querySelector('#partners .meta-list').innerHTML =
-          `<li>شركة البحر الأحمر</li>
-           <li>شركة محمد الحبيب العقارية</li>
-           <li>شركة مدى العقارية</li>
-           <li>شركة دار جلوبال</li>`;
-        document.querySelector('#contact .meta-list').innerHTML =
-          `<li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
-           <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
-           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
-           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
-      }
-    }
-  </script>
-</body>
-</html>
+      document.getElementById
