@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>سعيد العمري | وسيط عقاري معتمد لدى البحر الأحمر | فرص استثمارية فاخرة</title>
-  <meta name="description" content="فرص استثمارية فاخرة في مشاريع البحر الأحمر مثل جزيرة شورى و«لاحِق». تواصل عبر واتساب لحجز استشارة مع وسيط عقاري معتمد.">
+  <meta name="description" content="فرص استثمارية فاخرة في مشاريع البحر الأحمر مثل جزيرة شورى و«لاحِق». تواصل مباشرة عبر واتساب لحجز استشارة مع وسيط عقاري معتمد.">
   <link rel="canonical" href="https://www.saeedalamri.me/">
   <meta name="robots" content="index,follow">
 
@@ -26,135 +26,76 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
-    :root {
-      --primary: #003366;
-      --gold: #C7A75C;
-      --bg: #f4f4f4;
-      --text: #222;
+    :root{
+      --primary:#003366;
+      --gold:#C7A75C;
+      --bg:#f4f4f4;
+      --text:#222;
     }
-    *, *::before, *::after { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Tahoma, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:'Tahoma',system-ui; background:var(--bg); color:var(--text); line-height:1.7;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
-    a { color: var(--primary); text-decoration: none; }
-    a:focus { outline: 2px solid var(--gold); outline-offset: 2px; }
+    a{color:var(--primary); text-decoration:none}
+    a:focus{outline:2px solid var(--gold); outline-offset:2px}
 
     /* زر تبديل اللغة */
-    .lang-switch {
-      position: fixed; top: 16px; left: 16px; z-index: 60;
-      background: var(--primary); color: #fff;
-      padding: 8px 12px; border-radius: 6px;
-      cursor: pointer; font-size: 14px;
-      user-select: none;
+    .lang-switch{
+      position:fixed; top:16px; left:16px; z-index:60;
+      background:var(--primary); color:#fff; padding:8px 12px; border-radius:6px; cursor:pointer; font-size:14px;
+      user-select:none
     }
 
     /* الهيدر */
-    header {
-      background: var(--primary); color: #fff;
-      text-align: center; padding: 18px 12px;
+    header{
+      background:var(--primary); color:#fff; text-align:center; padding:18px 12px;
     }
-    .logo { max-width: 140px; }
-    #license {
-      margin: 0.5em 0 0;
-      font-weight: bold;
-      color: #fff; /* التأكيد على ظهور الرقم */
+    header #license {
+      color: #fff; /* تأكيد ظهور رقم الرخصة باللون الأبيض */
     }
+    .logo{max-width:140px}
 
-    /* قسم الهيدر المصور */
-    .hero {
-      position: relative; overflow: hidden;
-      background: #000 url('hero.webp') center/cover no-repeat;
-      min-height: 46vh; display: flex;
-      align-items: center; justify-content: center;
-      text-align: center; color: #fff;
+    /* قسم البطل (الهيدر) */
+    .hero{
+      position:relative; overflow:hidden;
+      background:#000 url('hero.webp') center/cover no-repeat;
+      min-height:46vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
     }
-    .hero::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: rgba(0,0,0,0.35);
-      z-index: 0; pointer-events: none;
+    .hero::after{
+      content:""; position:absolute; inset:0; background:rgba(0,0,0,.35);
+      z-index:0; pointer-events:none;
     }
-    .hero-inner {
-      position: relative; z-index: 1;
-      padding: 32px 16px; max-width: 900px;
+    .hero-inner{ position:relative; z-index:1; padding:32px 16px; max-width:900px }
+    .hero h1{margin:0 0 8px; font-size:clamp(22px,4.5vw,36px);}
+    .hero p{margin:6px 0 16px; font-size:clamp(14px,2.5vw,18px);}
+    .cta-wrap{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+    .btn{
+      display:inline-block; padding:12px 18px; border-radius:10px; font-weight:700; text-align:center;
+      -webkit-tap-highlight-color:transparent;
     }
-    .hero h1 {
-      margin: 0 0 8px;
-      font-size: clamp(22px,4.5vw,36px);
-    }
-    .hero p {
-      margin: 6px 0 16px;
-      font-size: clamp(14px,2.5vw,18px);
-    }
-    .cta-wrap {
-      display: flex; gap: 12px;
-      justify-content: center; flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block; padding: 12px 18px;
-      border-radius: 10px; font-weight: 700;
-      text-align: center;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .btn-whatsapp {
-      background: #25D366; color: #fff;
-      min-width: 170px;
-    }
-    .btn-outline {
-      border: 2px solid #fff; color: #fff;
-      min-width: 140px;
-    }
+    .btn-whatsapp{background:#25D366; color:#fff; min-width:170px}
+    .btn-outline{border:2px solid #fff; color:#fff; min-width:140px}
 
-    .container {
-      padding: 20px; max-width: 1100px; margin: auto;
-    }
-    .section {
-      background: #fff; border-radius: 12px;
-      padding: 18px; margin: 18px 0;
-    }
-    .section h2 {
-      margin-top: 0; font-size: 22px;
-      color: var(--primary);
-    }
-    .grid {
-      display: grid; gap: 14px;
-      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
-    }
-    .card {
-      border-radius: 12px; overflow: hidden;
-      background: #fafafa; border: 1px solid #eee;
-    }
-    .card img {
-      width: 100%; height: auto; display: block;
-    }
-    .card .cap {
-      padding: 10px 12px; font-weight: 700;
-    }
-    .meta-list {
-      list-style: none; padding: 0; margin: 0;
-    }
-    .meta-list li {
-      margin: 6px 0;
-    }
-    footer {
-      padding: 24px 16px; text-align: center;
-      color: #666;
-    }
+    .container{padding:20px; max-width:1100px; margin:auto;}
+    .section{background:#fff; border-radius:12px; padding:18px; margin:18px 0;}
+    .section h2{margin-top:0; font-size:22px; color:var(--primary);}
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+    .card{border-radius:12px; overflow:hidden; background:#fafafa; border:1px solid #eee}
+    .card img{width:100%; height:auto; display:block}
+    .card .cap{padding:10px 12px; font-weight:700}
+    .meta-list{list-style:none; padding:0; margin:0}
+    .meta-list li{margin:6px 0}
+    footer{padding:24px 16px; text-align:center; color:#666}
 
-    @media (max-width: 480px) {
-      .cta-wrap .btn { width: 100%; }
+    @media (max-width:480px){
+      .cta-wrap .btn{ width:100%; }
     }
   </style>
 </head>
 
 <body>
-  <div class="lang-switch" id="langBtn">EN</div>
+  <div class="lang-switch" onclick="toggleLanguage()">EN</div>
 
   <!-- الهيدر -->
   <header>
@@ -163,18 +104,14 @@
     <p id="license">رخصة فال: 1100050408</p>
   </header>
 
-  <!-- الهيدر المصور -->
+  <!-- قسم البطل -->
   <section class="hero" aria-label="صورة مشاريع البحر الأحمر الفاخرة">
     <div class="hero-inner">
       <h1 id="hero-title">فرص استثمارية فاخرة في قلب المملكة</h1>
       <p id="hero-sub">خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين</p>
       <div class="cta-wrap">
-        <a class="btn btn-whatsapp" href="https://wa.me/966503266822" aria-label="تواصل عبر واتساب">
-          تواصل عبر واتساب
-        </a>
-        <a class="btn btn-outline" href="tel:+966503266822" aria-label="اتصال هاتفي">
-          اتصل بنا
-        </a>
+        <a class="btn btn-whatsapp" href="https://wa.me/966503266822" aria-label="تواصل عبر واتساب">تواصل عبر واتساب</a>
+        <a class="btn btn-outline" href="tel:+966503266822" aria-label="اتصال هاتفي">اتصل بنا</a>
       </div>
     </div>
   </section>
@@ -246,30 +183,29 @@
   <!-- JSON-LD: تعريف نشاط وسيط عقاري -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"RealEstateAgent",
-    "name":"سعيد العمري",
-    "url":"https://www.saeedalamri.me/",
-    "logo":"https://www.saeedalamri.me/page11_img1.png",
-    "image":"https://www.saeedalamri.me/hero.webp",
-    "description":"وسيط عقاري معتمد لدى شركة البحر الأحمر. فرص استثمارية فاخرة في المملكة.",
-    "telephone":"+966503266822",
-    "email":"saeeed06@gmail.com",
-    "areaServed":"SA",
-    "address":{"@type":"PostalAddress","addressCountry":"SA"},
-    "sameAs":["https://www.linkedin.com/in/saeed-alalmri-36b295163"]
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "سعيد العمري",
+    "url": "https://www.saeedalamri.me/",
+    "logo": "https://www.saeedalamri.me/page11_img1.png",
+    "image": "https://www.saeedalamri.me/hero.webp",
+    "description": "وسيط عقاري معتمد لدى شركة البحر الأحمر. فرص استثمارية فاخرة في المملكة.",
+    "telephone": "+966503266822",
+    "email": "saeeed06@gmail.com",
+    "areaServed": "SA",
+    "address": { "@type": "PostalAddress", "addressCountry": "SA" },
+    "sameAs": ["https://www.linkedin.com/in/saeed-alalmri-36b295163"]
   }
   </script>
 
+  <!-- تبديل اللغة -->
   <script>
     let isArabic = true;
-    document.getElementById('langBtn').addEventListener('click', toggleLanguage);
-
     function toggleLanguage() {
       isArabic = !isArabic;
       document.body.dir = isArabic ? 'rtl' : 'ltr';
       document.documentElement.lang = isArabic ? 'ar' : 'en';
-      document.getElementById('langBtn').innerText = isArabic ? 'EN' : 'عربي';
+      document.querySelector('.lang-switch').innerText = isArabic ? 'EN' : 'عربي';
 
       document.getElementById('name').innerText = isArabic
         ? 'سعيد العمري | وسيط عقاري معتمد لدى شركة البحر الأحمر'
@@ -287,17 +223,42 @@
         ? 'خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين'
         : 'Expertise in marketing Red Sea luxury projects with trusted partners';
 
-      document.querySelector('#bio h2').innerText = isArabic ? 'نبذة تعريفية' : 'About';
+      document.getElementById('bio').innerHTML = isArabic ? `
+        <h2>نبذة تعريفية</h2>
+        <p>سعيد العمري، وسيط عقاري معتمد لدى شركة البحر الأحمر (تابعة لصندوق الاستثمارات العامة).
+        أعمل على تسويق المشاريع العقارية الفاخرة وتقديم حلول استثمارية مدروسة للمستثمرين في المملكة والخليج.</p>
+      ` : `
+        <h2>About</h2>
+        <p>I’m Saeed Alamri, a certified real estate broker affiliated with The Red Sea Company (PIF).
+        I market luxury real estate projects and provide tailored investment solutions for clients in Saudi Arabia and the Gulf.</p>
+      `;
+
       document.querySelector('#projects h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
       document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
       document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
 
-      if (!isArabic) {
-        document.querySelector('#contact .meta-list').innerHTML = `
-          <li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
-          <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
-          <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+      if (!isArabic){
+        document.querySelector('#partners .meta-list').innerHTML =
+          `<li>The Red Sea Company</li>
+           <li>Mohammed Al-Habib Real Estate</li>
+           <li>Mada Real Estate</li>
+           <li>Dar Global</li>`;
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+      } else {
+        document.querySelector('#partners .meta-list').innerHTML =
+          `<li>شركة البحر الأحمر</li>
+           <li>شركة محمد الحبيب العقارية</li>
+           <li>شركة مدى العقارية</li>
+           <li>شركة دار جلوبال</li>`;
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
       }
     }
   </script>
