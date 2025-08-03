@@ -16,11 +16,13 @@
   <meta name="description" content="فرص استثمارية فاخرة في مشاريع البحر الأحمر مثل جزيرة شورى و«لاحِق». تواصل مباشرة عبر واتساب لحجز استشارة مع وسيط عقاري معتمد.">
   <link rel="canonical" href="https://www.saeedalamri.me/">
   <meta name="robots" content="index,follow">
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.saeedalamri.me/">
   <meta property="og:title" content="سعيد العمري | وسيط عقاري معتمد لدى البحر الأحمر">
   <meta property="og:description" content="استثمر في مشاريع فاخرة ضمن البحر الأحمر مثل جزيرة شورى و«لاحِق». احجز استشارة عبر واتساب.">
+  <!-- نستخدم صورة موجودة عندك كصورة مشاركة -->
   <meta property="og:image" content="https://www.saeedalamri.me/page21_img1.png">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -34,31 +36,45 @@
     *{box-sizing:border-box}
     body{
       margin:0; font-family:'Tahoma',system-ui; background:var(--bg); color:var(--text); line-height:1.7;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
-    /* زر تبديل اللغة (يبقى كما كان) */
+    a{color:var(--primary); text-decoration:none}
+    a:focus{outline:2px solid var(--gold); outline-offset:2px}
+
+    /* زر تبديل اللغة */
     .lang-switch{
-      position:fixed; top:16px; left:16px; z-index:50;
-      background:var(--primary); color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; cursor:pointer; font-size:14px;
+      position:fixed; top:16px; left:16px; z-index:60;
+      background:var(--primary); color:#fff; padding:8px 12px; border-radius:6px; cursor:pointer; font-size:14px;
+      user-select:none
     }
+
     header{
-      background:var(--primary); color:#fff; text-align:center; padding:20px 16px;
+      background:var(--primary); color:#fff; text-align:center; padding:18px 12px;
     }
     .logo{max-width:140px}
+
+    /* قسم البطل */
     .hero{
       position:relative; overflow:hidden;
       background:#000 url('page21_img1.png') center/cover no-repeat;
-      min-height:44vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
+      min-height:46vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
     }
-    .hero::after{content:""; position:absolute; inset:0; background:rgba(0,0,0,.35);}
-    .hero-inner{position:relative; padding:32px 16px; max-width:900px}
+    /* طبقة التعتيم لا تتلقى اللمس وتبقى تحت المحتوى */
+    .hero::after{
+      content:""; position:absolute; inset:0; background:rgba(0,0,0,.35);
+      z-index:0; pointer-events:none;
+    }
+    .hero-inner{ position:relative; z-index:1; padding:32px 16px; max-width:900px }
     .hero h1{margin:0 0 8px; font-size:clamp(22px,4.5vw,36px);}
     .hero p{margin:6px 0 16px; font-size:clamp(14px,2.5vw,18px);}
     .cta-wrap{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
     .btn{
-      display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700;
+      display:inline-block; padding:12px 18px; border-radius:10px; font-weight:700; text-align:center;
+      -webkit-tap-highlight-color:transparent;
     }
-    .btn-whatsapp{background:#25D366; color:#fff;}
-    .btn-outline{border:2px solid #fff; color:#fff;}
+    .btn-whatsapp{background:#25D366; color:#fff; min-width:170px}
+    .btn-outline{border:2px solid #fff; color:#fff; min-width:140px}
+
     .container{padding:20px; max-width:1100px; margin:auto;}
     .section{background:#fff; border-radius:12px; padding:18px; margin:18px 0;}
     .section h2{margin-top:0; font-size:22px; color:var(--primary);}
@@ -69,7 +85,10 @@
     .meta-list{list-style:none; padding:0; margin:0}
     .meta-list li{margin:6px 0}
     footer{padding:24px 16px; text-align:center; color:#666}
-    a{color:var(--primary)}
+
+    @media (max-width:480px){
+      .cta-wrap .btn{ width:100%; }
+    }
   </style>
 </head>
 
@@ -89,8 +108,10 @@
       <h1 id="hero-title">فرص استثمارية فاخرة في قلب المملكة</h1>
       <p id="hero-sub">خبرة في تسويق مشاريع البحر الأحمر بالتعاون مع شركاء موثوقين</p>
       <div class="cta-wrap">
+        <!-- زر واتساب يعمل -->
         <a class="btn btn-whatsapp" href="https://wa.me/966503266822" aria-label="تواصل عبر واتساب">تواصل عبر واتساب</a>
-        <a class="btn btn-outline" href="#contact">اتصل بنا</a>
+        <!-- زر اتصال مباشر بالجوال + تمرير لأسفل لقسم التواصل كخيار ثانوي -->
+        <a class="btn btn-outline" href="tel:+966503266822" aria-label="اتصال هاتفي">اتصل بنا</a>
       </div>
     </div>
   </section>
@@ -158,7 +179,7 @@
     © جميع الحقوق محفوظة لسعيد العمري — www.saeedalamri.me
   </footer>
 
-  <!-- JSON-LD: تعريف نشاط وسيط عقاري + موقع -->
+  <!-- JSON-LD: تعريف نشاط وسيط عقاري -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -176,7 +197,7 @@
   }
   </script>
 
-  <!-- تبديل اللغة (نفس فكرتك، مع تصحيح النصوص) -->
+  <!-- تبديل اللغة -->
   <script>
     let isArabic = true;
     function toggleLanguage() {
@@ -218,23 +239,23 @@
       document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
       document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
 
-      // قسم الشركاء + التواصل
+      // الشركاء + التواصل
       if (!isArabic){
-        document.querySelector('#partners .meta-list').innerHTML = `
-          <li>The Red Sea Company</li><li>Mohammed Al-Habib Real Estate</li><li>Mada Real Estate</li>`;
-        document.querySelector('#contact .meta-list').innerHTML = `
-          <li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
-          <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
-          <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+        document.querySelector('#partners .meta-list').innerHTML =
+          `<li>The Red Sea Company</li><li>Mohammed Al-Habib Real Estate</li><li>Mada Real Estate</li>`;
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>Email:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>Phone:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">Chat on WhatsApp</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
       } else {
-        document.querySelector('#partners .meta-list').innerHTML = `
-          <li>شركة البحر الأحمر</li><li>شركة محمد الحبيب العقارية</li><li>شركة مدى العقارية</li>`;
-        document.querySelector('#contact .meta-list').innerHTML = `
-          <li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
-          <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
-          <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
-          <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
+        document.querySelector('#partners .meta-list').innerHTML =
+          `<li>شركة البحر الأحمر</li><li>شركة محمد الحبيب العقارية</li><li>شركة مدى العقارية</li>`;
+        document.querySelector('#contact .meta-list').innerHTML =
+          `<li><strong>البريد الإلكتروني:</strong> <a href="mailto:saeeed06@gmail.com">saeeed06@gmail.com</a></li>
+           <li><strong>رقم الجوال:</strong> <a href="tel:+966503266822">+966 503266822</a></li>
+           <li><a class="btn btn-whatsapp" href="https://wa.me/966503266822">تواصل عبر واتساب</a></li>
+           <li><a href="https://www.linkedin.com/in/saeed-alalmri-36b295163" target="_blank" rel="noopener">LinkedIn</a></li>`;
       }
     }
   </script>
