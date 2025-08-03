@@ -47,8 +47,12 @@
       user-select:none
     }
 
+    /* الهيدر */
     header{
       background:var(--primary); color:#fff; text-align:center; padding:18px 12px;
+    }
+    header #license {
+      color: #fff; /* تأكيد ظهور رقم الرخصة باللون الأبيض */
     }
     .logo{max-width:140px}
 
@@ -229,7 +233,6 @@
         I market luxury real estate projects and provide tailored investment solutions for clients in Saudi Arabia and the Gulf.</p>
       `;
 
-      /* تحديث عناوين الأقسام والقوائم */
       document.querySelector('#projects h2').innerText = isArabic ? 'مشاريع مميزة' : 'Featured Projects';
       document.querySelector('#partners h2').innerText = isArabic ? 'الشركاء' : 'Partners';
       document.querySelector('#contact h2').innerText = isArabic ? 'معلومات التواصل' : 'Contact';
